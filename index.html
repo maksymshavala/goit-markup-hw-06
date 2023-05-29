@@ -469,18 +469,18 @@
           <div class="contact-form-wrp">
             <label class="contact-form-field-wrap">
               <span class="contact-form-field-descr">Name</span>
-              <span class="contact-form-input-wrp">
+              <div class="contact-form-input-wrp">
                 <input
                   class="contact-form-input"
                   type="text"
-                  name="user_name"
+                  name="user-name"
                   required
                   pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+"
                 />
-                <svg class="contact-form-icon">
+                <svg class="contact-form-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
-              </span>
+              </div>
             </label>
           </div>
           <div class="contact-form-wrp">
@@ -490,7 +490,7 @@
                 <input
                   class="contact-form-input"
                   type="tel"
-                  name="user_tel"
+                  name="user-tel"
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                   title="xxx-xxx-xx-xx"
                 />
@@ -503,17 +503,17 @@
           <div class="contact-form-wrp">
             <label class="contact-form-field-wrap">
               <span class="contact-form-field-descr">Email</span>
-              <span class="contact-form-input-wrp">
+              <div class="contact-form-input-wrp">
                 <input
                   class="contact-form-input"
-                  type="text"
-                  name="user_mail"
+                  type="email"
+                  name="user-email"
                   required
                 />
                 <svg class="contact-form-icon">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
-              </span>
+              </div>
             </label>
           </div>
           <div class="contact-form-comment-wrp">
@@ -521,18 +521,22 @@
               <span class="contact-form-field-descr">Comment</span>
               <textarea
                 class="contact-form-message"
+                id="user-comment"
                 name="user-message"
                 placeholder="Text input"
               ></textarea>
             </label>
-            <label class="contact-form-checkbox-wrap">
+            <div class="contact-form-checkbox-box">
               <input
-                class="contact-form-checkbox"
-                type="checkbox"
-                name="user_policy"
-                value="user-policy"
-                required
+              class="contact-form-checkbox"
+              id="user-privacy"
+              type="checkbox"
+              name="user-policy"
+              value="true"
+              required
               />
+              <label class="contact-form-checkbox-wrap" for="user-privacy">
+                <span class="contact-form-checkbox-text">
               <svg class="contact-form-check-icon" width="10" height="8">
                 <use
                   class="contact-form-check-mark-icon"
@@ -541,6 +545,7 @@
               </svg>
               I accept the terms and conditions of the
               <a href="#"> Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button class="contact-form-submit-but" type="submit">Send</button>
