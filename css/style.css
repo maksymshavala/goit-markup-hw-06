@@ -720,7 +720,19 @@ body {
 
 .contact-form-field-wrap {
   display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--sub-text-color);
+  margin-bottom: 4px;
+}
+
+.contact-form-wrp {
   margin-bottom: 8px;
+}
+
+.contact-form-comment-wrp {
+  margin-bottom: 16px;
 }
 
 .contact-form-field-descr {
