@@ -494,9 +494,10 @@
             </div>
           </div>
           <div class="contact-form-wrp">
-            <label class="contact-form-field-wrap">Email</label>
+            <label class="contact-form-field-wrap" for="user-email">Email</label>
             <div class="contact-form-field-descr">
               <input
+              id="user-email"
                 class="contact-form-input"
                 type="email"
                 name="user-email"
@@ -528,9 +529,7 @@
               required
             />
             <label class="contact-form-checkbox-wrap" for="user-privacy"
-              >I accept the terms and conditions of the
-              <a href="#"> Privacy Policy</a>
-              <span class="contact-form-checkbox-text">
+              ><span class="contact-form-checkbox-text">
                 <svg class="contact-form-check-icon" width="10" height="8">
                   <use
                     class="contact-form-check-mark-icon"
@@ -538,6 +537,8 @@
                   ></use>
                 </svg>
               </span>
+              I accept the terms and conditions of the
+              <a href="#"> Privacy Policy</a>
               </label>
             </div>
             <button class="contact-form-submit-but" type="submit">Send</button>
