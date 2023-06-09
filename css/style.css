@@ -862,9 +862,9 @@ body {
   + .contact-form-check-icon
   > .contact-form-check-mark-icon {
   background-color: var(--pressed-state-color);
-  opacity: 1;
   border: none;
   fill: var(--light-back-color);
+  opacity: 1;
 }
 
 .contact-form-checkbox:focus + .contact-form-check-icon {
