@@ -736,20 +736,20 @@ body {
 }
 
 .contact-form-field-descr {
-  contact-form-field-descr
-  display: block;
+  position: relative;
+  /* display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 0.86;
   letter-spacing: 0.01em;
   color: var(--sub-text-color);
-  margin-bottom: 4px;
+  margin-bottom: 4px; */
 }
 
 .contact-form-input {
   width: 100%;
   height: 40px;
-   border: 1px solid rgba(46, 47, 66, 0.4); 
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
   background-color: transparent;
@@ -777,9 +777,9 @@ body {
 .contact-form-message {
   width: 100%;
   height: 120px;
-  font-size: 12px; */
+  font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04em; */
+  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
@@ -799,15 +799,15 @@ body {
   color: var(--sub-text-color);
 }
 
-.contact-form-checkbox-text{
+.contact-form-checkbox-text {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   display: inline-flex;
   align-items: center;
-   justify-content: center;
-   fill: transparent;
+  justify-content: center;
+  fill: transparent;
 }
 
 .contact-form-check-icon {
@@ -822,10 +822,9 @@ body {
   opacity: 0;
 }
 
-.contact-form-checkbox-box{
+.contact-form-checkbox-box {
   margin-bottom: 24px;
-
-} 
+}
 
 .contact-form-checkbox {
   appearance: none;
