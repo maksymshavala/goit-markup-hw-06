@@ -430,15 +430,15 @@
         <div class="footer-form">
           <p class="footer-form-field-descr">Subscribe</p>
           <form class="footer-form">
-            <label class="footer-form-field-wrap">
-              <input
-                class="footer-form-input"
-                type="email"
-                name="user_mail"
-                required
-                placeholder="E-mail"
-              />
-            </label>
+            <label class="footer-form-field-wrap" for="user-mail"></label>
+            <input
+              id="user-mail"
+              class="footer-form-input"
+              type="email"
+              name="user-mail"
+              required
+              placeholder="E-mail"
+            />
             <button class="footer-form-submit-but" type="submit">
               Subscribe
               <svg class="footer-form-button-icon" width="24" height="24">
@@ -529,6 +529,7 @@
               name="user-privacy"
               value="true"
               required
+              visually-hidden
             />
             <label class="contact-form-checkbox-wrap" for="user-privacy"
               ><span class="contact-form-checkbox-text">
